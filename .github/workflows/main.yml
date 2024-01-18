@@ -9,8 +9,8 @@ on:
       - main
 
 jobs:
-  runs-on: ubuntu-latest
   default-checks:
+    runs-on: ubuntu-latest
     steps:
     - name: Run check for secrets
       run: echo "Checking for secrets"
