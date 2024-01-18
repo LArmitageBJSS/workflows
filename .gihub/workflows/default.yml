@@ -1,0 +1,15 @@
+name: Default pull request checks
+
+on:
+  push:
+    branches: 
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  default-checks:
+    steps:
+    - name: Run check for secrets
+      runs: echo "Checking for secrets"
